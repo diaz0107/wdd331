@@ -43,7 +43,7 @@ header ul a:hover{
 }
 
 header h1 a {
-    color: var(--main-color);
+    color: black;
 }
 
 header h1 a:visited {
