@@ -1,39 +1,48 @@
+/* W01 Assignment - Google imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-/* W01 Assignment - Site Colors */
+/* W01 Assignment - Web Page Colors */
 :root {
     --main-color: #333333;
-    --main-white: white;
-    --visited-link: #666666;
+    --nav-normal: #666666; 
+    --nav-visited: #666666;
     --active-link: #deb887;
     --active-hover: #00ddff;
     --active-lines: #d0d0d0;
   }
-
+ 
+/* W01 Assignment - Review Web Page - Main */
 body{
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif; 
 }
+
+/* W01 Assignment - Review Web Page - Header */
 header{
     margin:0;
     padding: 30px;
     text-align:center;
     grid-area: header;
     color: var(--main-color);
-    font-size: 40px;
+    font-size: 25px;
+    
 }
 
-header h1{
-    color: black;
+header h1 a {
+    color: var(--main-color);
+}
+
+header h1 a:visited {
+    color: var(--main-color);
 }
 
 header a:link{
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--nav-normal);
 }  
 header a:visited{
-    color: var(--visited-link);
+    color: var(--main-color);
 }
 header a:active{
     color: var(--active-link);
@@ -60,21 +69,23 @@ li{
     text-decoration: none;
 }
  a:visited{
-    color: var(--visited-link);
+    color: var(--main-color);
     text-decoration: none;
 }
  a:hover{
     text-decoration: none;
 
 }
+
+ /* W01 Assignment - Review Web Page - Article Cards */
 .post-content h2 a:link{
-    color: var(--main-color);
+    color: var(--nav-normal);
 }
 .post-content h2 a:visited{
-    color: var(--main-color);
+    color: var(--nav-normal);
 }
 .post-content h2 a:active{
-    color: var(--active-link);
+    color: var-(--active-link);
 }
 .post-content h2 a:hover{
     color: var(--active-hover);
@@ -105,6 +116,7 @@ img{
     margin-top:30px;
 }
 
+/* W01 Assignment - Navigation Links */
 nav{
     border-top: 1px solid var(--active-lines);
     border-bottom: 1px solid var(--active-lines);
@@ -115,19 +127,20 @@ nav ul{
     padding-left: 0;
 }
 
+/* W01 Assignment - Review Web Page - Larger Screen */
 @media screen and (min-width: 700px){
     body > div{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin: 0 20px;
-        grid-template-areas: 'header header header header'
+             grid-template-areas: 'header header header header'
                              'main main main main'
                              'main main main main'   
                              'main main main main';   
     }
     
     header ul li {
-        font-size: 40px;
+        font-size: 25px;
         color: var(--main-color);
     }
 
@@ -147,6 +160,7 @@ nav ul{
         justify-content: flex-end;
     }
 
+    /* W01 Assignment - Review Web Page - Article Cards */
     article{
         padding: 0 0;
     }
