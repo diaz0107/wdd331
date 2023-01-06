@@ -21,9 +21,13 @@ header{
     text-align:center;
     grid-area: header;
     color: var(--main-color);
-    font-size: 30px;
-    
+    font-size: 40px;
 }
+
+header h1{
+    color: black;
+}
+
 header a:link{
     text-decoration: none;
     color: var(--main-color);
