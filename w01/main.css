@@ -31,7 +31,7 @@ header{
     text-align:center;
     grid-area: header;
     color: var(--main-color);
-    font-size: 30px;
+    font-size: 25px;
     
 }
 header h1 a {
