@@ -24,7 +24,7 @@ header a:visited{
 header a:active{
     color: #DEB887;
 }
-header a:hover{
+header ul a:hover{
     color: #00ddff;
     text-decoration: none;
 }
@@ -50,7 +50,6 @@ li{
     text-decoration: none;
 }
  a:hover{
-    color: #00ddff;
     text-decoration: none;
 
 }
@@ -75,6 +74,9 @@ main{
     font-size: 30px;
     margin:10px;
     color: #333;
+    border-bottom: 1px solid #d0d0d0;    
+    text-align: right;
+    padding-bottom: 5px;
 }
 article{
     margin:10px;
@@ -89,17 +91,60 @@ img{
     margin-top:30px;
 }
 
+nav{
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+}
+
+nav ul{
+    padding-left: 0;
+}
+
 @media screen and (min-width: 700px){
-    body div{
+    body > div{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
         margin: 0 20px;
-        grid-template-areas: 'header main main main'
-                             'header main main main';   
+        grid-template-areas: 'header header header header'
+                             'main main main main'
+                             'main main main main'   
+                             'main main main main';   
     }
     
     header ul li {
         font-size: 40px;
         color: #000;
     }
+
+    .post-date{
+        border-bottom: none;
+    }
+
+    body article{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 0 20px;
+        grid-template-areas: 'div section';   
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    article{
+        padding: 0 0;
+    }
+
+    article section {
+        padding-left: 20px;
+        border-left: 1px solid #d0d0d0;
+        border-bottom: 1px dotted #d0d0d0;
+    }
+
+    main article:last-child section{
+        border-bottom: none;
+    }
+
 }
