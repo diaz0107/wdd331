@@ -85,7 +85,7 @@ li{
     color: var(--nav-normal);
 }
 .post-content h2 a:active{
-    color: var-(--active-link);
+    color: var(--active-link);
 }
 .post-content h2 a:hover{
     color: var(--active-hover);
@@ -109,8 +109,9 @@ article{
     margin-top:20px;
     background: white;
     padding: 15px;
-    box-shadow: #333(168, 162, 162) 3px 3px 3px;
+    box-shadow: rgb(168, 162, 162) 3px 3px 3px;
 } 
+
 img{
     text-align:center;
     width: 90%;
