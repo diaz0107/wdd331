@@ -28,15 +28,6 @@ header{
     font-size: 25px;
     
 }
-
-header h1 a {
-    color: black;
-}
-
-header h1 a:visited {
-    color: black;
-}
-
 header a:link{
     text-decoration: none;
     color: var(--nav-normal);
@@ -51,6 +42,15 @@ header ul a:hover{
     color: var(--active-hover);
     text-decoration: none;
 }
+
+header h1 a {
+    color: var(--main-color);
+}
+
+header h1 a:visited {
+    color: var(--main-color);
+}
+
 h1, h2, h3, h4, h5, h6{
 font-family:  'Lora', 'Serif';
 }
