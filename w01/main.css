@@ -76,6 +76,7 @@ li{
     color:var(--nav-visited);
     text-decoration: none;
 }
+ /* W01 Assignment - Review Web Page - Article Cards */
  a:hover{
     text-decoration: none;
 
@@ -118,7 +119,7 @@ img{
     width: 90%;
     margin-top:30px;
 }
-
+/* W01 Assignment - Navigation Links */
 nav{
     border-top: 1px solid var(--active-lines);
     border-bottom: 1px solid var(--active-lines);
@@ -128,7 +129,7 @@ nav{
 nav ul{
     padding-left: 0;
 }
-
+/* W01 Assignment - Review Web Page - Larger Screen */
 @media screen and (min-width: 700px){
     body > div{
         display: grid;
@@ -160,7 +161,7 @@ nav ul{
         display: flex;
         justify-content: flex-end;
     }
-
+    /* W01 Assignment - Review Web Page - Article Cards */
     article{
         padding: 0 0;
     }
