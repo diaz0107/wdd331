@@ -30,11 +30,11 @@ header{
 }
 
 header h1 a {
-    color: var(--main-color);
+    color: black;
 }
 
 header h1 a:visited {
-    color: var(--main-color);
+    color: black;
 }
 
 header a:link{
