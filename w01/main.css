@@ -96,7 +96,7 @@ main{
     grid-area: main;
 }
 .post-date{
-    font-size: 30px;
+    font-size: 25px;
     margin:10px;
     color: var(--main-color);
     border-bottom: 1px solid #d0d0d0;    
@@ -145,6 +145,7 @@ nav ul{
     }
 
     .post-date{
+        font-size: 25px;
         border-bottom: none;
     }
 
