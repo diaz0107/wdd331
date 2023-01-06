@@ -31,13 +31,12 @@ header{
     text-align:center;
     grid-area: header;
     color: var(--main-color);
-    font-size: 25px;
+    font-size: 35px;
     
 }
 header h1 a {
-    color: var(--main-color);
+    color: black;
 }
-
 header h1 a:visited {
     color: black;
 }
