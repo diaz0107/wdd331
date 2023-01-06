@@ -1,5 +1,24 @@
+/* W01 Assignment - Google imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+/* W01 Assignment - Web Page Colors */
+:root {
+    --main-color: #333333;
+    --nav-normal: #666666; 
+    --nav-visited: #666666;
+    --active-link: #deb887;
+    --active-hover: #00ddff;
+    --active-lines: #d0d0d0;
+  }
+ 
+/* W01 Assignment - Review Web Page - Main */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* W01 Assignment - Review Web Page - Header */
 body{
     margin: 0;
     padding: 0;
@@ -11,12 +30,12 @@ header{
     padding: 30px;
     text-align:center;
     grid-area: header;
-    color: #333;
+    color: var(--main-color);
     font-size: 30px;
     
 }
 header h1 a {
-    color: black;
+    color: var(--main-color);
 }
 
 header h1 a:visited {
@@ -24,16 +43,16 @@ header h1 a:visited {
 }
 header a:link{
     text-decoration: none;
-    color: #666;
+    color: var(--main-normal);
 }  
 header a:visited{
-    color: #666;
+    color: var(--main-normal);
 }
 header a:active{
-    color: #DEB887;
+    color: var(--active-link);
 }
 header ul a:hover{
-    color: #00ddff;
+    color: var(--active-hover);
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
@@ -50,11 +69,11 @@ li{
 }
 
  a:link{
-    color:#666;
+    color: var(--main-normal);
     text-decoration: none;
 }
  a:visited{
-    color:#666;
+    color:var(--nav-visited);
     text-decoration: none;
 }
  a:hover{
@@ -62,16 +81,16 @@ li{
 
 }
 .post-content h2 a:link{
-    color:black;
+    color: var(--main-color);
 }
 .post-content h2 a:visited{
-    color:black;
+    color: var(--main-color);
 }
 .post-content h2 a:active{
-    color:#DEB887;
+    color: var(--active-link);
 }
 .post-content h2 a:hover{
-    color:#00ddff;
+    color: var(--active-hover);
 }
 main{
     margin: 0;
@@ -81,9 +100,10 @@ main{
 .post-date{
     font-size: 30px;
     margin:10px;
-    color: #333;
-    border-bottom: 1px solid #d0d0d0;    
+    color: var(--main-normal);
+    border-bottom: 1px solid var(--active-lines); 
     text-align: right;
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 article{
@@ -91,7 +111,7 @@ article{
     margin-top:20px;
     background: white;
     padding: 15px;
-    box-shadow: #333(168, 162, 162) 3px 3px 3px;
+    box-shadow: var(--active-lines) 3px 3px 3px;
 } 
 img{
     text-align:center;
@@ -100,8 +120,8 @@ img{
 }
 
 nav{
-    border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
+    border-top: 1px solid var(--active-lines);
+    border-bottom: 1px solid var(--active-lines);
     text-align: center;
 }
 
@@ -122,7 +142,7 @@ nav ul{
     
     header ul li {
         font-size: 40px;
-        color: #000;
+        color: var(--main-color);
     }
 
     .post-date{
@@ -147,12 +167,11 @@ nav ul{
 
     article section {
         padding-left: 20px;
-        border-left: 1px solid #d0d0d0;
-        border-bottom: 1px dotted #d0d0d0;
+        border-left: 1px solid var(--active-lines);
+        border-bottom: 1px dotted var(--active-lines);
     }
 
     main article:last-child section{
         border-bottom: none;
     }
-
 }
