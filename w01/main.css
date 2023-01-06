@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+/* W01 Assignment - Site Colors */
+:root {
+    --main-color: #333333;
+    --main-white: white;
+    --visited-link: #666666;
+    --active-link: #deb887;
+    --active-hover: #00ddff;
+    --active-lines: #d0d0d0;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -10,22 +20,22 @@ header{
     padding: 30px;
     text-align:center;
     grid-area: header;
-    color: #333;
+    color: var(--main-color);
     font-size: 30px;
     
 }
 header a:link{
     text-decoration: none;
-    color: #666;
+    color: var(--main-color);
 }  
 header a:visited{
-    color: #666;
+    color: var(--visited-link);
 }
 header a:active{
-    color: #DEB887;
+    color: var(--active-link);
 }
 header ul a:hover{
-    color: #00ddff;
+    color: var(--active-hover);
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
@@ -42,11 +52,11 @@ li{
 }
 
  a:link{
-    color:#666;
+    color: var(--main-color);
     text-decoration: none;
 }
  a:visited{
-    color:#666;
+    color: var(--visited-link);
     text-decoration: none;
 }
  a:hover{
@@ -54,16 +64,16 @@ li{
 
 }
 .post-content h2 a:link{
-    color:black;
+    color: var(--main-color);
 }
 .post-content h2 a:visited{
-    color:black;
+    color: var(--main-color);
 }
 .post-content h2 a:active{
-    color:#DEB887;
+    color: var(--active-link);
 }
 .post-content h2 a:hover{
-    color:#00ddff;
+    color: var(--active-hover);
 }
 main{
     margin: 0;
@@ -73,7 +83,7 @@ main{
 .post-date{
     font-size: 30px;
     margin:10px;
-    color: #333;
+    color: var(--main-color);
     border-bottom: 1px solid #d0d0d0;    
     text-align: right;
     padding-bottom: 5px;
@@ -92,8 +102,8 @@ img{
 }
 
 nav{
-    border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
+    border-top: 1px solid var(--active-lines);
+    border-bottom: 1px solid var(--active-lines);
     text-align: center;
 }
 
@@ -114,7 +124,7 @@ nav ul{
     
     header ul li {
         font-size: 40px;
-        color: #000;
+        color: var(--main-color);
     }
 
     .post-date{
@@ -139,8 +149,8 @@ nav ul{
 
     article section {
         padding-left: 20px;
-        border-left: 1px solid #d0d0d0;
-        border-bottom: 1px dotted #d0d0d0;
+        border-left: 1px solid var(--active-lines);
+        border-bottom: 1px dotted var(--active-lines);
     }
 
     main article:last-child section{
