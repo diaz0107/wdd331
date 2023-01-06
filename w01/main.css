@@ -31,7 +31,7 @@ header{
     text-align:center;
     grid-area: header;
     color: var(--main-color);
-    font-size: 35px;
+    font-size: 25px;
     
 }
 header h1 a {
@@ -58,10 +58,6 @@ h1, h2, h3, h4, h5, h6{
 font-family:  'Lora', 'Serif';
 }
 
-hr{
-    margin-left: 5%;
-    margin-right: 5%;
-}
 li{
     list-style: none;
     margin:10px;
@@ -98,7 +94,7 @@ main{
     grid-area: main;
 }
 .post-date{
-    font-size: 30px;
+    font-size: 25px;
     margin:10px;
     color: var(--main-normal);
     border-bottom: 1px solid var(--active-lines); 
@@ -141,7 +137,7 @@ nav ul{
     }
     
     header ul li {
-        font-size: 40px;
+        font-size: 30px;
         color: var(--main-color);
     }
 
