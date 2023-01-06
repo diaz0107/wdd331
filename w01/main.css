@@ -81,10 +81,10 @@ li{
 
 }
 .post-content h2 a:link{
-    color: var(--main-color);
+    color: var(--nav-normal);
 }
 .post-content h2 a:visited{
-    color: var(--main-color);
+    color: var(--nav-normal);
 }
 .post-content h2 a:active{
     color: var(--active-link);
