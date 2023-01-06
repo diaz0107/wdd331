@@ -74,7 +74,6 @@ li{
  /* W01 Assignment - Review Web Page - Article Cards */
  a:hover{
     text-decoration: none;
-
 }
 .post-content h2 a:link{
     color: var(--nav-normal);
