@@ -101,6 +101,7 @@ main{
     color: var(--main-color);
     border-bottom: 1px solid #d0d0d0;    
     text-align: right;
+    padding-top: 12px;
     padding-bottom: 5px;
 }
 article{
