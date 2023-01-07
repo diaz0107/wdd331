@@ -27,7 +27,7 @@ body{
 header{
  /*   background: white; */
     margin:0;
-    padding: 30px;
+    padding: 35px;
     text-align:center;
     grid-area: header;
     color: var(--main-color);
@@ -101,7 +101,7 @@ main{
     padding-left: 10px;
     padding-right: 5px;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px; 
 }
 article{
     margin:10px;
