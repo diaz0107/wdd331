@@ -124,6 +124,7 @@ nav{
 
 nav ul{
     padding-left: 0;
+    padding: 0 0;
 }
 /* W01 Assignment - Review Web Page - Larger Screen */
 @media screen and (min-width: 700px){
