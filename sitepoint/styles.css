@@ -115,10 +115,18 @@ descendant selector
 child selector 
 ----------------------- */
 
+div > span {
+    font-size: 90%;
+    text-transform: uppercase;
+}
 
 /* -----------------------
 adjacent sibling selector 
 ----------------------- */
+h2 + h3 {
+    background: lime;
+    margin-top: 1.2em;
+}
 
 /* -----------------------
 general sibling selector 
