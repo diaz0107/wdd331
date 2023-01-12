@@ -14,14 +14,43 @@ body
 /* -----------------------
 rule sets
 ----------------------- */
+h1, h2, h3 {
+    margin: 0 0 .5em;
+    color: #0060A2;
+}
 
+p, blockquote, li {
+    line-height: 1.5;
+}
+p {
+    margin: 0 0 1.5em;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding 1em 0;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    color: #976500;
+    font-size: 120%;
+    font-style: italic;
+}
+
+abbr {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
 /* -----------------------
 type selectors 
 ----------------------- */
 
+p {
+    margin: 0 0 1.5em;
+}
 /* -----------------------
 class selectors 
 ----------------------- */
+
 
 /* -----------------------
 id selectors 
