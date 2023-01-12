@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>selector: invalid</title>
+	<title>selector: read-only</title>
 	<link href="styles.css" rel="stylesheet">
 <style>
 	/* example 1 */
-	input:invalid {
+	textarea:read-only {
 		border: 5px solid red;
 	}
 </style>
@@ -14,13 +14,17 @@
 <body>
 <div class="container">
 	<h1>
-		Selector: invalid
+		Selector: read-only
 	</h1>
 	<h2>Example 1</h2>
 	<form class="example" action="#">
 		<div>
-			<label for="one">Enter two numbers only (for example "59")</label>
-			<input id="one" type="text" pattern="[0-9]{2}">
+			<label for="one">Label 1</label><br>
+			<textarea id="one" name="one" rows="3" cols="20"></textarea>
+		</div>
+		<div>
+			<label for="two">Label 2 (readonly)</label><br>
+			<textarea id="two" readonly name="two" rows="3" cols="20"></textarea>
 		</div>
 	</form>
 </div>
