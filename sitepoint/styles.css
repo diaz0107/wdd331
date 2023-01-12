@@ -50,22 +50,71 @@ p {
 /* -----------------------
 class selectors 
 ----------------------- */
+.container{
+    width: 670px;
+    margin: 0 auto;
+}
 
+.color1 {
+    color: #32a2db;
+}
+
+.color2 {
+    color: #004272;
+}
+
+.copyright {
+    margin: 3em 0;
+    padding: 2em;
+    font-size: 90%;
+    background-color: #d4e8f6;
+}
 
 /* -----------------------
 id selectors 
 ----------------------- */
+#nav {
+    float: left;
+    width: 146px;
+}
+
+#main {
+   float:  right;
+   width: 480px; 
+}
 
 /* -----------------------
 universal selector 
 ----------------------- */
+/*
+* {
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+*/
+
 /* -----------------------
 descendant selector 
 ----------------------- */
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav a {
+    display: block;
+    padding: .5em;
+    border-bottom: 1px solid #c8c8c8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* -----------------------
 child selector 
 ----------------------- */
+
 
 /* -----------------------
 adjacent sibling selector 
