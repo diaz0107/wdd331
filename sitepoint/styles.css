@@ -143,13 +143,27 @@ a:link {
     text-decoration: none;
     border-bottom: 1px solid;
 }
-
 a:visited {
     color: #32A2db;
+}
+a:focus {
+    color: black;
+    background: #fff5d8;
+    outline: 1px solid #d88f00;
+}
+
+a:hover {
+    color: #976500;
+}
+
+a:active {
+    color: red;
 }
 /* -----------------------
 first-line selector 
 ----------------------- */
+
+
 
 /* -----------------------
 first-letter selector 
