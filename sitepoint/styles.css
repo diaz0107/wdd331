@@ -162,9 +162,17 @@ a:active {
 /* -----------------------
 first-line selector 
 ----------------------- */
-
-
+.intro::first-line {
+    background: lightblue;
+}
 
 /* -----------------------
 first-letter selector 
 ----------------------- */
+.intro::first-letter {
+    float: left;
+    margin-right: .1em;
+    font-size: 300%;
+    line-height: 1;
+
+}
