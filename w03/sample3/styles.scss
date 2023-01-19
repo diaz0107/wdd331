@@ -1,3 +1,11 @@
+// Variable assignment
+$my-variable: 42px;
+
+// Variable usage
+.foo {
+     width: $my-variable;
+}
+
 //colors
 $body-background-color: darkred;
 $form-background-color: white;
@@ -67,27 +75,17 @@ h4 {
 
 #contactform {
     background-color: $form-background-color;
-
-    input,
-    textarea {
+    input, textarea {
         background-color: $input-color;
         flex: 2;
-
-        @include breakpoint(small) {
-            @include center(20em, 100%);
-        }
-
-        @include breakpoint(large) {
-            background: cyan;
-        }
     }
-
-    @include breakpoint(medium) {
-        @include center(700px);
-    }
-
-    @include breakpoint(large) {
-        @include center(900px, 70%);
+    @media (min-width: $break-small) {
+       & {
+          width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
     }
 }
 
