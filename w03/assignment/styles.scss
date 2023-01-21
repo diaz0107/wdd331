@@ -8,7 +8,7 @@ $my-variable: 42px;
 
 //colors
 $body-background-color: darkred;
-$form-background-color: white;
+$form-background-color: rgb(236, 193, 127);
 $input-color: white;
 $headlines-color : white;
 
@@ -29,19 +29,13 @@ $break-large: 60em;
 
 @mixin breakpoint($break) {
     @if $break==large {
-        @media (max-width: $break-large) {
+        @media (min-width: $break-large) {
             @content;
         }
     }
 
     @else if $break==medium {
-        @media (max-width: $break-medium) {
-            @content;
-        }
-    }
-
-    @else if $break==small {
-        @media (max-width: $break-small) {
+        @media (min-width: $break-medium) {
             @content;
         }
     }
@@ -73,20 +67,43 @@ h4 {
     color: $headlines-color;
 }
 
+#content {
+    @include center(960px);
+}
+
+
 #contactform {
     background-color: $form-background-color;
     input, textarea {
         background-color: $input-color;
         flex: 2;
+        width: 95%;
     }
-    @media (min-width: $break-small) {
-       & {
-          width: 90%;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto; 
-        } 
+
+    label {
+        width: 95%;
     }
+
+    input[type="submit"] {
+        border-style: ridge;
+        border-width: 3px;
+        border-color: #c0bfbf;
+        box-shadow: 0 0 1px 1px  #919191 inset;
+        width: 75px;
+    }
+
+    
+    & {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto; 
+    } 
+    
+}
+
+#fieldset {
+    max-width: 700px;
 }
 
 fieldset>div {
@@ -107,6 +124,4 @@ fieldset>div {
     }
 }
 
-#content {
-    @include center(960px);
-}
+#fieldset input, #fieldset textarea { background-color: $input-color;}
