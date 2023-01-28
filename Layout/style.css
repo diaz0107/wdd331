@@ -1,0 +1,158 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(218, 237, 226);
+}
+
+body { 
+	font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #555753;
+	margin: 0; 
+	padding: 0;
+}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+}
+
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+}
+
+.page-wrapper { 
+	padding: 0px;
+	margin: 0vh 5vw; 
+	background-color: rgb(119, 196, 211);
+}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+}
+
+header {
+	color: white;
+}
+header h1 { 
+	font-variant-caps: all-small-caps;
+	background-color: rgb(234, 46, 73);
+	color: white;
+}
+header h2 {
+	font-size: 4.5em;
+	font-variant-caps: all-small-caps; 
+}
+header abbr {
+	text-decoration: none;
+	color: rgba(246,247,146,0.9);
+}
+
+.summary {
+	background-color: rgba(51, 55, 69, 0.9);
+	color: white;
+}
+.summary p {
+	background-color: rgba(246,247,146,0.9);
+	color: darkslategrey;
+}
+
+.preamble {
+	background-color: rgb(234, 46, 73);
+	color: white;
+}
+.preamble h3 {
+	color: white;
+}
+
+.supporting {	
+	background-color: rgb(119, 196, 211);
+}
+
+.explanation {
+	background-color: rgba(240, 240, 240, 0.9);
+}
+
+.main {
+	background-color: rgba(51, 55, 69, 0.9);
+}
+ 
+.participation {
+	background-color: rgba(240, 240, 240, 0.9);
+}
+
+.benefits {
+	background-color: rgba(240, 240, 240, 0.9);
+}
+
+.requirements {
+	background-color: rgba(240, 240, 240, 0.9);
+}
+
+footer { 
+	background-color: rgb(234, 46, 73);
+}
+footer a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 1vh 1vw;
+	border: 1px rgb(234, 46, 73) solid;
+	border-radius: 3px;
+}
+footer a:hover {
+	color: lightgray;
+	border: 1px whitesmoke solid;
+	border-radius: 3px;
+}
+
+.design-selection {
+	background-color: rgb(234, 46, 73);
+	color: white;
+}
+.design-selection h3 {
+	color: white;
+}
+.design-selection nav {
+	background-color: rgba(51, 55, 69, 0.9);
+}
+
+a.design-name {
+	text-decoration: none;
+	color: rgba(224, 224, 224, 0.9);
+	font-weight: bold;
+}
+a.design-name:hover {
+	color: rgba(212, 212, 212, 0.9);
+}
+
+a.designer-name {
+	color: white;
+}
+
+.zen-resources {
+	background-color: rgb(119, 196, 211);
+	color: white;
+}
+
+.zen-resources ul {
+	background-color: rgba(246,247,146,0.9);
+	color: darkslategrey;
+}
+
+.zen-resources li a {
+	text-decoration: none;
+	color: rgba(51, 55, 69, 0.9);
+	font-weight: bold;
+}
+.zen-resources li a:hover {
+	color: slategray;
+}
