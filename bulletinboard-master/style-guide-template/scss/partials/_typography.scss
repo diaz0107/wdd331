@@ -1,0 +1,102 @@
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+
+$primary-font: 'Lora', serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+
+$decorfont-1: 'Great Vibes', cursive;
+$decorfont-2: 'Fredericka the Great', cursive;
+$decorfont-3: 'Special Elite', cursive;
+$decorfont-4: 'Boogaloo', cursive;
+$decorfont-5: 'Shadows Into Light', cursive;
+$decorfont-6: 'Sacramento', cursive;
+$decorfont-7: 'PT Sans', sans-serif;
+$decorfont-8: 'Raleway', sans-serif;
+
+
+h1, h2, h3, h4 {
+	font-family: $secondary-font;
+	color: $color-2;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 .4em;
+
+	@include MQ(S) {
+		font-size: 3.2rem;
+	}
+
+	@include MQ(M) {
+		font-size: 4rem;
+	}
+}
+
+h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1em 0;
+
+	@include MQ(S) {
+		font-size: 1.8rem;
+		margin: 1em 0 1.4em;
+	}
+}
+
+h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1em 0;
+
+	@include MQ(S) {
+		font-size: 1.5rem;
+	}
+}
+
+h4 {
+	margin: 0 0 .5em 0;
+
+	@include MQ(S) {
+		font-size: 4rem;
+	}
+
+}
+
+section > h2::before {
+	/* number before each section title */
+	color: darken($color-4, 15%);
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: lighten($color-2, 25%);
+
+	a {
+		color: $color-1;
+		text-decoration: underline;
+	}
+
+	@include MQ(S) {
+		font-size: 1.6rem;
+		line-height: 1.6;
+	}
+}
+
+p.decorfont1 {
+	font-size: 24px;
+}
+
+p.decorfont1:nth-of-type(1) {font-family: $decorfont-1;}
+p.decorfont1:nth-of-type(2) {font-family: $decorfont-2;}
+p.decorfont1:nth-of-type(3) {font-family: $decorfont-3;}
+p.decorfont1:nth-of-type(4) {font-family: $decorfont-4;}
+p.decorfont1:nth-of-type(5) {font-family: $decorfont-5;}
+p.decorfont1:nth-of-type(6) {font-family: $decorfont-6;}
+p.decorfont1:nth-of-type(7) {font-family: $decorfont-7;}
+p.decorfont1:nth-of-type(8) {font-family: $decorfont-8;}

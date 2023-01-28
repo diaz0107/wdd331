@@ -1,0 +1,64 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+@import 'partials/normalize';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import 'partials/variables';
+@import 'partials/mix-ins';
+@import 'partials/typography';
+@import 'partials/intro';
+@import 'partials/main';
+@import 'partials/sidebar';
+@import 'partials/footer';
+@import 'partials/keyframes';
+
+/* basic elements */
+html {
+  @include margin-padding(0, 0);
+}
+body {
+  background: $color-1;
+  color: $color-2;
+  font-family: $primary-font;
+  font-size: 16pt;
+  line-height: 1.5rem;
+  @include margin-padding(0, 0);
+}
+p {
+  margin-top: 0;
+}
+
+/* specific divs */
+.page-wrapper {
+  border-top: 150px solid $color-2;
+  @include margin-padding(0 0, 0 40px 200px 40px);
+  position: relative;
+  @include breakpoint(small) {
+    background-image: url('images/burlap.jpg');
+    @include margin-padding(0 0, 0 40px);
+  }
+  @include breakpoint(medium) {
+    margin: auto;
+    max-width: 1200px;
+  }
+}
+
+/*medium styles*/
+
+@media (min-width: 45em) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    left: 220px;
+    position: absolute;
+  }
+  .main.supporting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

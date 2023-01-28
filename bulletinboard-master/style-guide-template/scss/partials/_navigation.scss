@@ -1,0 +1,61 @@
+@mixin linkstate() {
+    a:link {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-2;
+    }
+    a:visited {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-6;
+    }
+    a:hover {
+        color: $color-1;
+    }
+    a:active {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-6;
+    }
+}
+
+.cd-navigation .cd-box div:first-of-type, .cd-navigation .cd-box div:nth-of-type(2) { /* Select a Design and Archives */
+    background-color: $color-3;
+    padding: 10px;
+  }
+  
+  .cd-navigation .cd-box div:nth-of-type(3) { /* Resources */
+    background-color: $color-4;
+    padding: 10px;
+  }
+
+.cd-primary-nav ul, .cd-secondary-nav ul  {
+    
+    li:nth-of-type(1) a {      
+        color: $color-2;//link color
+    }
+    li:nth-of-type(2) a {
+        color: $color-1;//visited color
+    }
+    li:nth-of-type(3) a {
+        color: $color-6;//hover color
+    }
+    li:nth-of-type(4) a {
+        color: $color-2;//active color
+    }
+}
+
+.cd-other-nav ul {
+    li:nth-of-type(1) a {
+        color: $color-5;//link color
+    }
+    li:nth-of-type(2) a {
+        color: $color-6;//visited color
+    }
+    li:nth-of-type(3) a {
+        color: $color-1;//hover color
+    }
+    li:nth-of-type(4) a {
+        color: $color-6;//active color
+    }
+}

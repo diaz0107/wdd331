@@ -1,0 +1,130 @@
+//Intro section including Header, Summary, Preamble
+
+//Header with Logo image and text(h1)
+header h1 {
+  background: transparent;
+  @include background-img (url(images/logo_pink.png),
+  no-repeat,
+  225px,
+  225px,
+  center,
+  center,
+  0);
+  height: 130px;
+  @include margin-padding(-155px auto 40px auto, 80px 30px 0 30px);
+  vertical-align: middle;
+  width: 155px;
+  @include breakpoint(small) {
+    -ms-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    height: 230px;
+    margin-top: -180px;
+    transform: translateX(-100px);
+    width: 255px;
+    @include background-img (url(images/logo_blue.png),
+    no-repeat,
+    300px,
+    300px,
+    center,
+    center,
+    0);
+  }
+}
+
+//title (h2) for .summary/Beauty of CSS card
+header h2 {
+  -ms-transform: translateY(16px);
+  -webkit-transform: translateY(16px);
+  background-color: $color-6;
+  @include pin;
+  @include box-shadow;
+  color: $color-2;
+  font-size: $font-size-medium;
+  line-height: 1.2rem;
+  @include margin-padding(auto, 50px 90px 5px 25px);
+  transform: translateY(16px);
+  width: 135px;
+  @include breakpoint(small) {
+    left: 220px;
+    position: absolute;
+    top: 140px;
+  }
+  @include breakpoint(medium) {
+    right: -395px;
+    top: 115px;
+    z-index: 10;
+  }
+  @include breakpoint(large) {
+    right: -380px;
+    top: 55px;
+    z-index: 70;
+  }
+}
+
+//"Beauty of CSS" card--white card with flower image (Title=header h2)
+.summary {
+  -ms-transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+  @include background-img (url('images/flower-combo.png'),
+  no-repeat,
+  370px,
+  370px,
+  right -180px,
+  bottom -150px,
+  .8em);
+  background-color: $color-6;
+  @include box-shadow;
+  @include margin-padding(0 auto 40px auto, 0 25px 160px 25px);
+  transform: translateY(15px);
+  width: 200px;
+  z-index: 10;
+  & p {
+    line-height: 1.3rem;
+    width: 175px;
+  }
+  @include breakpoint(small) {
+    left: 440px;
+    position: absolute;
+    top: 230px;
+  }
+  @include breakpoint(medium) {
+    left: 560px;
+    top: 205px;
+    z-index: 70;
+  }
+  @include breakpoint(large) {
+    left: 553px;
+    top: 145px;
+  }
+}
+
+//"The Road to Enlightenment card" --dark brown card with white text
+.preamble {
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  background-color: $color-2;
+  @include pin;
+  @include box-shadow;
+  color: $color-6;
+  @include margin-padding(20px 0 15px 0, 30px);
+  text-align: center;
+  transform: rotate(-1deg);
+  width: 85%;
+  & h3 {
+    font-size: $font-size-medium;
+  }
+  & p {
+    font-size: $font-size-small;
+  }
+  @include breakpoint(small) {
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    margin: 140px auto 0 auto;
+    transform: rotate(-4deg);
+    width: 75%;
+  }
+  @include breakpoint(medium) {
+    margin: 140px 0 0 0;
+    width: 70%;
+  }
+}

@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro');
+
+/* SCSS variables */
+
+$color-1: #b8c8cc; // Blue background
+$color-2: #382519; // Dark Brown
+$color-3: #efd9bf; // cream
+$color-4: #ec637d; // dark pink
+$color-5: #4b5548; // green
+$color-6: #ffffff; // white
+$color-7: #f2b975; // orange
+$color-8: #ede3da; // light-cream
+$pin: url('images/blue-push-pin.png');
+$secondary-font: Lora, Georgia, serif;
+$primary-font: 'Source Sans Pro', Arial, sans-serif;
+
+/*
+$color-1: #b8c8cc; //  Blue background
+$color-2: #382519; // Dark Brown
+$color-3: #efd9bf; // cream
+$color-4: #ec637d; // dark pink
+$color-5: #ffffff; // white
+$color-6: #4b5548; // green
+*/
+
+/* SCSS Mixins */
+
+@mixin box-shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@mixin pin {
+  background-image: $pin;
+  background-position: top center;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
+
+@mixin background-img ($url,
+  $repeat,
+  $size1,
+  $size2,
+  $position1,
+  $position2,
+  $font-size) {
+    background-image: $url;
+    background-repeat: $repeat;
+    background-size: $size1 $size2;
+    background-position: $position1 $position2;
+    font-size: $font-size;
+}
+
+/* basic elements */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 1em georgia, sans-serif;
+  line-height: 1.5em;
+  color: $color-2;
+  background: $color-1;
+  margin: 0;
+  padding: 0;
+  border-top: 175px solid $color-2;
+  font-family: $secondary-font;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-font;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: $color-2;
+}
+
+.preamble h3,
+.explanation h3,
+.zen-resouces h3,
+.preamble,
+.explanation,
+.zen-resources {
+  color: $color-6;
+}
+
+h1,
+h2,
+.summary,
+.benefits,
+.requirements,
+footer a {
+  background-color: $color-6;
+}
+
+a {
+  &:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-2;
+  }
+  &:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-6;
+  }
+  &:hover {
+    color: lighten($color-2, 40%);
+  }
+  &:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-6;
+  }
+}
+
+abbr {
+  border-bottom: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* specific divs */
+
+.page-wrapper {
+  padding: 0 40px;
+  margin: auto;
+  position: relative;
+}
+
+header h1 {
+  width: 255px;
+  height: 230px;
+  padding: 80px 30px 0px 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: -175px auto 40px auto;
+  @include box-shadow;
+  @include background-img (url('images/logo-ver-1.jpg'),
+    no-repeat,
+    350px,
+    350px,
+    center,
+    center,
+    0); /* Image will be an SVG */
+}
+
+header h2 {
+  font-size: 1.2em;
+  width: 260px;
+  height: 50px;
+  color: $color-2;
+  background-color: $color-6;
+  line-height: 1em;
+  padding: 60px 25px 0 25px;
+  @include box-shadow;
+  @include pin;
+  margin: auto;
+}
+
+.summary {
+  width: 260px;
+  margin: auto;
+  padding: 0 25px 25px 25px;
+  @include box-shadow;
+  @include background-img (url('images/flower-combo.png'),
+    no-repeat,
+    300px,
+    300px,
+    right -130px,
+    bottom -110px,
+    1em);
+  & p {
+    width: 200px;
+  }
+  & p:nth-last-of-type(1) {
+    padding-bottom: 75px;
+  }
+}
+
+.preamble {
+  margin: auto;
+  width: 80%;
+  padding: 30px;
+  background-color: $color-2;
+  color: $color-6;
+  transform: rotate(-6deg);
+  @include box-shadow;
+  @include pin;
+}
+
+.preamble h3,
+.preamble p,
+.explanation h3 {
+  text-align: center;
+}
+
+.explanation {
+  margin: auto;
+  padding: 30px;
+  width: 75%;
+  height: auto;
+  transform: rotate(2deg);
+  @include box-shadow;
+  background-color: $color-4;
+  @include pin;
+}
+
+.participation {
+  margin: auto;
+  padding: 10px 25px 10px 100px;
+  width: 60%;
+  height: auto;
+  @include box-shadow;
+  margin: 20px;
+  background-color: $color-8;
+  @include background-img (url('images/red-leaves.png'),
+    no-repeat,
+    30%,
+    60%,
+    left,
+    center,
+    1em);
+  & h3,
+  & p {
+    text-align: right;
+  }
+}
+
+.benefits {
+  width: 80%;
+  height: 275px;
+  padding: 10px 20px 35px 50px;
+  @include box-shadow;
+  margin: auto;
+  transform: rotate(2deg);
+  border-right: 10px solid $color-7;
+  @include pin;
+}
+
+.requirements {
+  padding: 30px 20px 30px 50px;
+  width: 80%;
+  margin: auto;
+  @include box-shadow;
+  margin: 20px;
+  @include pin;
+  &  h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  & p:nth-of-type(1) {
+    border-top: 15px solid $color-2;
+    padding-top: 15px;
+  }
+  & role {
+    background-color: $color-2;
+  }
+}
+
+.design-archives {
+  @include box-shadow;
+  margin: 20px;
+  padding: 15px;
+  font-size: 0.8em;
+  width: 150px;
+  font-weight: normal;
+  font-family: $secondary-font;
+  background-color: $color-3;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.design-selection {
+  & h3 {
+    @include box-shadow;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1em;
+    background-color: $color-3;
+  }
+  & ul {
+    column-count: 2;
+  }
+  & li {
+    width: 150px;
+    height: 100px;
+    @include box-shadow;
+    margin: 30px;
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-3;
+  }
+  & li:nth-child(1) {
+    transform: rotate(-2deg);
+    @include pin;
+  }
+  & li:nth-child(2) {
+    transform: rotate(3deg);
+    @include pin;
+  }
+  & li:nth-child(3) {
+    transform: rotate(1deg);
+    @include pin;
+  }
+  & li:nth-child(4) {
+    transform: rotate(-5deg);
+    @include pin;
+  }
+  & li:nth-child(5) {
+    transform: rotate(1deg);
+    @include pin;
+  }
+  & li:nth-child(6) {
+    @include pin;
+  }
+  & li:nth-child(7) {
+    transform: rotate(-3deg);
+    @include pin;
+  }
+  & li:nth-child(8) {
+    transform: rotate(1deg);
+    @include pin;
+  }
+  & li a:link {
+    color: $color-2;
+  }
+}
+
+p[role=contentinfo] {
+  position: absolute;
+  bottom: 130px;
+  left: -30px;
+  background-color: $color-2;
+  color: $color-6;
+  width: 100%;
+  text-align: right;
+  padding: 75px 15% 75px 20%;
+  font-size: 1.2em;
+  & a {
+    color: $color-6;
+  }
+}
+
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+.sidebar .wrapper {
+  font: 1.2em verdana, $primary-font;
+}
+
+h3.select {
+  margin: 10px 0 5px 0;
+  width: 200px;
+  text-transform: capitalize;
+  @include pin;
+  padding-top: 50px;
+  font-family: $secondary-font;
+}
+
+h3.archives {
+  margin: 25px 0 5px 0;
+  text-transform: capitalize;
+  font-family: $secondary-font;
+}
+
+h3.resources {
+  margin: 25px 0 5px 0;
+  color: $color-6;
+}
+
+.zen-resources {
+  padding: 70px 20px 100px 20px;
+  @include box-shadow;
+  transform: rotate(-15deg);
+  width: 200px;
+  background-color: $color-4;
+  @include background-img (url('images/blue-leaves.png'),
+    no-repeat,
+    100px,
+    200px,
+    right,
+    bottom,
+    0.8em);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    margin-bottom: -71px;
+    border-top: 75px solid $color-4;
+    border-right: 140px solid transparent;
+    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    margin-bottom: -71px;
+    border-top: 75px solid $color-4;
+    border-left: 140px solid transparent;
+    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+  }
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  & li {
+    line-height: 1.4em;
+    a:link {
+      color: $color-6;
+    }
+    a:hover {
+      color: $color-3;
+    }
+  }
+  & a {
+    font-family: $secondary-font;
+    font-weight: 100;
+  }
+}
+
+.sidebar li a:visited {
+  color: $color-5;
+}
+
+footer {
+  width: 110%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $color-3;
+  & a {
+    border: 2px solid $color-2;
+    padding: 15px 5px;
+    margin: auto;
+    font-size: 0.8em;
+    width: 50px;
+  }
+}
+
+a.zen-validate-html {
+  @include background-img (url('images/icons/html.png'),
+    no-repeat,
+    50px,
+    50px,
+    center,
+    center,
+    0);
+}
+
+a.zen-validate-css {
+  @include background-img (url('images/icons/css.png'),
+    no-repeat,
+    50px,
+    50px,
+    center,
+    center,
+    0);
+}
+
+a.zen-license {
+  @include background-img (url('images/icons/creative-commons.png'),
+    no-repeat,
+    50px,
+    50px,
+    center,
+    center,
+    0);
+}
+
+a.zen-github {
+  @include background-img (url('images/icons/github.png'),
+    no-repeat,
+    50px,
+    50px,
+    center,
+    center,
+    0);
+}
+
+a.zen-accessibility {
+  @include background-img (url('images/icons/accessible.png'),
+    no-repeat,
+    50px,
+    50px,
+    center,
+    center,
+    0);
+}
+
+@media (min-width: 700px) {
+
+  .page-wrapper {
+    width: 90%;
+    padding: 0 40px;
+    margin: auto;
+    position: relative;
+    background-image: url('images/burlap.jpg');
+    background-repeat: repeat;
+  }
+
+  header h2, .summary {
+    margin: 0;
+  }
+
+  .preamble {
+    width: 500px;
+    margin: 0;
+  }
+
+  .explanation {
+    width: 500px;
+    margin: 0;
+  }
+
+  .participation {
+    padding: 15px 30px 15px 140px;
+    width: 650px;
+    @include background-img (url('images/red-leaves.png'),
+      no-repeat,
+      150px,
+      90%,
+      left,
+      center,
+      1em);
+  }
+
+  .benefits {
+    width: 450px;
+    height: 165px;
+    padding: 15px 30px 35px 70px;
+    margin: 20px;
+    &::after {
+      content: "";
+      padding: 38px 20px;
+      margin-top: -165px;
+      background: $color-6;
+      background-image: url('images/barcode_horizontal_2nd.png');
+      background-size: 175px 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(90deg);
+      position: relative;
+      height: 30px;
+      width: 176px;
+      left: 435px;
+      display: block;
+      box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .requirements {
+    padding: 30px 30px 30px 80px;
+    width: 500px;
+    margin: 20px;
+  }
+
+  .design-selection {
+    & ul {
+      width: 500px;
+    }
+    & li {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+    }
+  }
+
+  p[role=contentinfo] {
+    width: 600px;
+    padding: 100px 150px 100px 65%;
+    left: -65px;
+  }
+
+  .sidebar .wrapper {
+    padding: 40px;
+  }
+
+  .zen-resources {
+    padding: 70px 30px 100px 30px;
+  }
+
+  footer {
+    left: -55px;
+    & a {
+      padding: 20px 10px;
+      margin: 0 10px;
+    }
+  }
+
+}
