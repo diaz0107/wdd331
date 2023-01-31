@@ -1,0 +1,97 @@
+.flex {
+  display: flex;
+}
+.flex-space {
+  display: flex;
+  justify-content:space-between;
+}
+.flex-grow {
+  display: flex;
+  justify-content:space-between;
+}
+.flex-grow li{
+  flex: 1 1 auto;
+}
+.basic-column {
+  display: flex;
+  flex-direction: column;
+}
+.fixed-width {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+}
+.fixed-height {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ height: 200px;
+}
+.fixed-height li {
+  flex: 1 1 auto;
+  height: 50px;
+}
+.space-around {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 200px;
+}
+.space-around li {
+  flex: 1 1 auto;
+  height: 50px;
+}
+.space-evenly {
+   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  height: 200px;
+}
+.space-evenly li {
+   flex: 1 1 auto;
+  height: 50px;
+}
+
+
+/* Setting up the boxes */
+ul {
+  list-style: none;
+  background: hsla(0, 0%, 35%, .5);
+  padding: .5rem;
+}
+li {
+  border: 1px solid black;
+    padding: .2rem;
+}
+h2 {
+  margin-top: 3rem;
+}
+
+
+/* Colored Boxes */
+
+.red {
+  background: hsla(358, 100%, 44%, .9);
+ 
+}
+.pink {
+   background: hsla(358, 100%, 64%, .9);
+}
+.orange {
+  background: hsla(22, 100%, 63%, .9);
+}
+.yellow {
+  background: hsla(44, 100%, 61%, .9);
+}
+.blue {
+  background: hsla(203, 77%, 43%, .9);
+}
+.green {
+  background: hsla(83, 68%, 47%, .9);
+}
+.purple {
+  background:  hsla(265, 32%, 44%, .9);
+}
