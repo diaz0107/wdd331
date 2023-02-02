@@ -14,7 +14,7 @@ html {
 	padding: 0;
 	}
 body { 
-	font: 75% georgia, sans-serif;
+	font: 75% Slackey, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(https://diaz0107.github.io/wdd331/zen-garden-project/images/sea.jpeg) no-repeat bottom right; 
@@ -26,7 +26,7 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: italic normal 1.4em Slackey, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
@@ -52,7 +52,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	background: url(http://csszengarden.com/001/blossoms.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
