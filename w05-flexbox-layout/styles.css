@@ -1,35 +1,50 @@
-<div class="container">
-  <div class="row align-items-start">
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-  </div>
-  <div class="row align-items-center">
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-  </div>
-  <div class="row align-items-end">
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-    <div class="col">
-      One of three columns
-    </div>
-  </div>
-</div>
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+.row-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 33.333333%;
+    position: relative;
+}
+
+.col-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 33.333333%;
+    width: 700px;
+    margin: auto;
+}
+
+.row-grid .card {
+    flex-grow: 1;
+    max-width: 50%;
+    min-width: 25%;
+}
+
+.col-grid .card {
+    flex-grow: 1;
+}
+
+.row-grid img {
+    height: 75%;
+    width: 100%;
+}
+
+.col-grid img {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #000;
+    margin: 10px;
+    object-fit: contain;
+}
