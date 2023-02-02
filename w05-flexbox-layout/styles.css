@@ -13,7 +13,7 @@ body {
     flex-wrap: wrap;
     flex: 0 0 33.333333%;
     position: relative;
-}
+ }
 
 .col-grid {
     display: flex;
