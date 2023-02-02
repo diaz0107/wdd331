@@ -52,7 +52,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(https://diaz0107.github.io/wdd331/zen-garden-project/images/logo-ver-1.jpg) no-repeat top left; 
+	background: url(https: //diaz 107github .io/wdd 331px /zen garden project/images/sea.jpeg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
@@ -185,10 +185,10 @@ footer a:link, footer a:visited {
 
 
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
+	background: transparent url(https://diaz0107.github.io/wdd331/zen-garden-project/images/touch-icon-2.jpg) top left no-repeat; 
 	position: absolute; 
-	top: 40px; 
+	top: 10px; 
 	right: 0; 
 	width: 148px; 
-	height: 110px;
+	height: 200px;
 	}
