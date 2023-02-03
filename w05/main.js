@@ -23,7 +23,7 @@ function initializeArray(qty, dir = "row") {
       width: width,
       src: "littlecolorado.jpg",
       title: "Another card"
-      };
+    };
   });
 }
 
