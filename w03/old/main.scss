@@ -43,27 +43,26 @@ header{
     font-size: 25px;
     
 }
-
 header {
     color: black;
-     
+    & { 
         h1 a:visited {
             color: black;
         }
-  
-     a {
-        :link{
+    }
+    & a {
+        &:link{
             text-decoration: none;
             color: $nav-normal;
         }  
-        :visited{
+        &:visited{
             color: $nav-normal;
         }
-        :active{
+        &:active{
             color: $active-link;
         }
     }
-     ul a:hover{
+    & ul a:hover{
         color: $active-hover;
         text-decoration: none;
     }
@@ -95,16 +94,16 @@ li{
  /* W01 Assignment - Review Web Page - Article Cards */
  
 .post-content h2 a {
-    :link{
+    &:link{
         color: $nav-normal;
     }
-    :visited{
+    &:visited{
         color: $nav-normal;
     }
-    :active{
+    &:active{
         color: $active-link;
     }
-    :hover{
+    &:hover{
         color: $active-hover;
     }
 }

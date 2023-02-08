@@ -32,14 +32,14 @@ header {
 header h1 a:visited {
   color: black;
 }
-header a :link {
+header a:link {
   text-decoration: none;
   color: #666666;
 }
-header a :visited {
+header a:visited {
   color: #666666;
 }
-header a :active {
+header a:active {
   color: #deb887;
 }
 header ul a:hover {
@@ -69,16 +69,16 @@ a:hover {
 }
 
 /* W01 Assignment - Review Web Page - Article Cards */
-.post-content h2 a :link {
+.post-content h2 a:link {
   color: #666666;
 }
-.post-content h2 a :visited {
+.post-content h2 a:visited {
   color: #666666;
 }
-.post-content h2 a :active {
+.post-content h2 a:active {
   color: #deb887;
 }
-.post-content h2 a :hover {
+.post-content h2 a:hover {
   color: #00ddff;
 }
 
