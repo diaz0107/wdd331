@@ -27,10 +27,10 @@ header {
 }
 
 header {
-  color: black;
+  color: #333333;
 }
 header h1 a:visited {
-  color: black;
+  color: #333333;
 }
 header a :link {
   text-decoration: none;
