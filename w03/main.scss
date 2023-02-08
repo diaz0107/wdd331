@@ -45,10 +45,10 @@ header{
 }
 
 header {
-    color: black;
+    color: $main-color;
      
         h1 a:visited {
-            color: black;
+            color: $main-color;
         }
   
      a {
