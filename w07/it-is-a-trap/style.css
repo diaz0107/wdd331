@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  background:#02264a;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+}
+
+.container-one {
+    padding: 1vmin;
+}
+
+.container-two, .container-three, .container-four {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Orbiting Circle */
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 10s ease-in-out infinite; /* shortcut for animation name, duration, timing function and iteration-count*/
+}
+
+/* Orbiting Circle Keyframes*/
+
+@keyframes orbit {
+    0% { transform: translate(0,0); }
+    5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+    25% { transform: translate(300%,0%); } /* start moving again */
+    30% { transform: translate(300%,0%); } /* pause */
+    50% { transform: translate(300%,300%); } /* move */
+    55% { transform: translate(300%,300%); }
+    75% { transform: translate(0%,300%); }
+    80% { transform: translate(0%,300%); }
+    100% { transform: translate(0%,0%); }
+}
+
+
+
+/* Morphing Circle */
+.morphing-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: morphing-circle-square 5s ease-in-out infinite; /* shortcut for animation name, duration, timing function and iteration-count*/
+}
+
+.container-two:hover .morphing-circle {
+    border-radius: 0;
+    background-color:  white;
+    transform: rotate(90deg);
+}
+
+
+/* Morphing Keyframes */
+
+@keyframes morphing-circle-square {
+    0% {border-radius: 50%}
+    25% { /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+        border-radius: 50%;
+        background-color: darkred;
+    }
+    50% { /* now change to white square...but don't start rotating yet! */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(0deg);
+    }
+    75% { /* stay a white square, but rotate 90deg */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(90deg);   
+    }
+    100% { /* stay rotated at 90, but change back to a circle */
+        border-radius: 50%;
+        background-color: darkred;
+        transform: rotate(90deg);
+    }
+}
+
+
+
+/* Cut into Half */
+
+
+.half-circle-left{
+    margin: 10px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    height: 25%;
+    width: calc(25%/2); /* Divide the width by 2 to cut excess part of the half circle */
+    background-color:darkred;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: circle-left 2s ease-in-out infinite; /* shortcut for animation name, duration, timing function and iteration-count*/
+}
+.half-circle-right {
+    margin: 10px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 25%;
+    width: calc(25%/2);
+    background-color:darkred;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: circle-right 2s ease-in-out infinite; /* shortcut for animation name, duration, timing function and iteration-count*/
+}
+
+/* Cut into Half Keyframes */
+@keyframes circle-left {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(10px,0); } /*Allow the half circle to move to the left*/
+    100% { transform: translate(0%,0%); }
+}
+
+@keyframes circle-right {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(-10px,0); }/*Allow the half circle to move to the right*/
+    100% { transform: translate(0%,0%); }
+}
+
+
+
+
+
+/* Popping Circle */
+
+.popping-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: popping-circle 5s ease-in-out infinite; /* shortcut for animation name, duration, timing function and iteration-count*/
+}
+
+
+/* Popping Circle Keyframes*/
+
+@keyframes popping-circle {
+    0% {transform: scale(1.0);}
+    2% {transform: scale(1.3);}
+    4% {transform: scale(1.0);}
+    6% {transform: scale(1.2);}
+    8% {transform: scale(1.0);}
+  
+    30% {transform: scale(1.0);}
+    32% {transform: scale(1.3);}
+    34% {transform: scale(1.0);}
+    36% {transform: scale(1.2);}
+    38% {transform: scale(1.0);}
+  
+    60% {transform: scale(1.0);}
+    62% {transform: scale(1.3);}
+    64% {transform: scale(1.0);}
+    66% {transform: scale(1.2);}
+    68% {transform: scale(1.0);}
+  
+    90% {transform: scale(1.0);}
+    92% {transform: scale(1.3);}
+    94% {transform: scale(1.0);}
+    96% {transform: scale(1.2);}
+    98% {transform: scale(1.0);}
+    100% {transform: scale(1.0);}
+}
