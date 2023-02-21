@@ -1,3 +1,9 @@
+.brk1 {
+    display: block;
+}
+.unBrk1 {
+    display: none;
+}
 body {
     font-size: 20px;
     line-height: 1.5;
@@ -35,3 +41,8 @@ footer {
 header img {
     margin: 15px;
 }
+.brk2 {
+    display: block;
+}
+.unBrk2 {
+    display: none;
