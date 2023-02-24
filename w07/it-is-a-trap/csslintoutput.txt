@@ -1,0 +1,23 @@
+
+style.css
+  [2m16:1[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+  [2m38:124[22m  [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+  [2m41:28[22m   [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+  [2m66:140[22m  [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+  [2m80:5[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+  [2m80:13[22m   [31m[31m✖[39m  Expected whitespace after "/*"   [2mcomment-whitespace-inside[22m
+  [2m84:5[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+  [2m89:5[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+  [2m94:5[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+ [2m123:129[22m  [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+ [2m125:1[22m    [31m[31m✖[39m  Expected empty line before rule  [2mrule-empty-line-before[22m
+ [2m135:130[22m  [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+ [2m141:45[22m   [31m[31m✖[39m  Expected whitespace after "/*"   [2mcomment-whitespace-inside[22m
+ [2m141:85[22m   [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+ [2m147:45[22m   [31m[31m✖[39m  Expected whitespace after "/*"   [2mcomment-whitespace-inside[22m
+ [2m147:86[22m   [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+ [2m174:132[22m  [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+ [2m178:27[22m   [31m[31m✖[39m  Expected whitespace before "*/"  [2mcomment-whitespace-inside[22m
+
+18 problems ([31m18 errors[39m, [33m0 warnings[39m)
+

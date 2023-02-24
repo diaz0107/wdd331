@@ -1,0 +1,8 @@
+
+styles.css
+ [2m13:5[22m   [31m[31m✖[39m  Expected shorthand property "flex-flow"                              [2mdeclaration-block-no-redundant-longhand-properties[22m
+ [2m14:15[22m  [31m[31m✖[39m  Expected "33.333333" to be "33.3333"                                 [2mnumber-max-precision[22m
+ [2m42:1[22m   [31m[31m✖[39m  Expected selector ".card" to come before selector ".row-grid .card"  [2mno-descending-specificity[22m
+
+3 problems ([31m3 errors[39m, [33m0 warnings[39m)
+
