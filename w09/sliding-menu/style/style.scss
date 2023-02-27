@@ -1,0 +1,101 @@
+$color_1: silver;
+$color_2: white;
+$background-color_1: black;
+$background-color_2: silver;
+$background-color_3: white;
+
+.menu-icon {
+	margin-top: 20px;
+	z-index: 2;
+	position: relative;
+	height: 4px;
+	width: 35px;
+	display: block;
+	border-radius: 50px;
+	background-color: $background-color_2;
+	transform: translate(0, 0);
+	transition: transform 0.5s ease;
+	&:hover {
+		cursor: pointer;
+		background-color: $background-color_1;
+		&:before {
+			cursor: pointer;
+			background-color: $background-color_1;
+		}
+		&:after {
+			cursor: pointer;
+			background-color: $background-color_1;
+		}
+	}
+	&::before {
+		height: 4px;
+		width: 35px;
+		display: block;
+		border-radius: 50px;
+		background-color: $background-color_2;
+		content: "";
+		transform: translate(0, -230%);
+		opacity: 1;
+		transition: transform 0.5s ease, opacity 0.5s ease;
+	}
+	&::after {
+		height: 4px;
+		width: 35px;
+		display: block;
+		border-radius: 50px;
+		background-color: $background-color_2;
+		content: "";
+		transform: translate(0, 130%);
+		transition: transform 0.5s ease;
+	}
+}
+.sidebar {
+	background: black;
+	color: $color_1;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -230px;
+	padding-left: 30px;
+	padding-top: 50px;
+	padding-right: 100px;
+	transition: left 0.5s ease;
+	ul {
+		li {
+			list-style-type: none;
+			font-size: 1.5em;
+			margin-bottom: 15px;
+			&:hover {
+				color: $color_2;
+			}
+		}
+	}
+}
+.menu-icon.open {
+	&::before {
+		transform: translate(0, 0) rotate(45deg);
+		opacity: 0;
+		background-color: $background-color_2;
+	}
+	&:after {
+		transform: translate(0, -96%) rotate(90deg);
+		background-color: $background-color_2;
+	}
+	transform: translate(490%, 0) rotate(45deg);
+	background-color: $background-color_2;
+	&:hover {
+		cursor: pointer;
+		background-color: $background-color_3;
+		&:before {
+			cursor: pointer;
+			background-color: $background-color_3;
+		}
+		&:after {
+			cursor: pointer;
+			background-color: $background-color_3;
+		}
+	}
+}
+.sidebar.open {
+	left: 0;
+}
