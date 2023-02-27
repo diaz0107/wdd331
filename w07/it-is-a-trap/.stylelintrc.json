@@ -1,3 +1,7 @@
 {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "value-no-vendor-prefix": true,
+        "declaration-no-important": true
+}
 }
