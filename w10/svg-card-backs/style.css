@@ -1,59 +1,26 @@
-body {
-  background: #1d1e22;
-  color: white;
-  font-family: sans-serif;
+div {
+  width: 900px;
+  margin: 0 auto;
 }
 
-.card-frame {
-  display: inline-block;
-  margin: 0 30px;
-}
-
-.svg-card {
-  width: 200px;
-  height: 280px;
-}
-
-.svg-card > .back {
-  width: 200px;
-  height: 280px;
-  fill: white;
-  rx: 20px;
-  ry: 20px;
-}
-
-/* Card 1 */
-.south-diamond {
-  fill: white;
-}
-
-.east-diamond {
-  fill: yellow;
-}
-
-.north-diamond {
+#border1 {
   fill: red;
-}
-
-.west-diamond {
-  fill: #343434;
-}
-
-/* Card 2 */
-.inner {
-  width: 170px;
-  height: 250px;
   stroke: black;
-  rx: 5px;
-  ry: 5px;
+  stroke-width: 6;
 }
 
-/*Courtesy of icomoon.io*/
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke: black;
-  stroke-width: 0.4px;
-  fill: darkred;
+#border2 {
+  fill: black;
+  stroke: blue;
+  stroke-width: 6;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  margin-top: 10px;
+  margin-left: 100px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 #BBB;
 }

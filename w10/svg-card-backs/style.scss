@@ -1,0 +1,33 @@
+$color1: red;
+$color2: black;
+$color3: blue;
+$borderWidth: 6;
+$width: 300px;
+$height: $width * 1.4;
+
+div {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#border1 {
+  fill: $color1;
+  stroke: $color2;
+  stroke-width: $borderWidth;
+}
+
+#border2 {
+  fill: $color2;
+  stroke: $color3;
+  stroke-width: $borderWidth;
+}
+
+.card {
+  width: $width;
+  height: $height;
+  margin-top: 10px;
+  margin-left: 100px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 #BBB;
+}
