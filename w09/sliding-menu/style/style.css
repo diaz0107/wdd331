@@ -95,4 +95,8 @@
   left: 0;
 }
 
+body.open {
+  background-color: rgba(27, 25, 25, 0.5647058824);
+}
+
 /*# sourceMappingURL=style.css.map */

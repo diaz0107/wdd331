@@ -3,6 +3,7 @@ $color_2: white;
 $background-color_1: black;
 $background-color_2: silver;
 $background-color_3: white;
+$background-transparent: #1b191990;
 
 .menu-icon {
 	margin-top: 20px;
@@ -98,4 +99,8 @@ $background-color_3: white;
 }
 .sidebar.open {
 	left: 0;
+}
+
+body.open {
+	background-color: $background-transparent;
 }
