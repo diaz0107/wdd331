@@ -1,0 +1,59 @@
+body {
+  background: #1d1e22;
+  color: white;
+  font-family: sans-serif;
+}
+
+.card-frame {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.svg-card {
+  width: 200px;
+  height: 280px;
+}
+
+.svg-card > .back {
+  width: 200px;
+  height: 280px;
+  fill: white;
+  rx: 20px;
+  ry: 20px;
+}
+
+/* Card 1 */
+.south-diamond {
+  fill: white;
+}
+
+.east-diamond {
+  fill: yellow;
+}
+
+.north-diamond {
+  fill: red;
+}
+
+.west-diamond {
+  fill: #343434;
+}
+
+/* Card 2 */
+.inner {
+  width: 170px;
+  height: 250px;
+  stroke: black;
+  rx: 5px;
+  ry: 5px;
+}
+
+/*Courtesy of icomoon.io*/
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: black;
+  stroke-width: 0.4px;
+  fill: darkred;
+}
