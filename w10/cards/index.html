@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cards</title>
+</head>
+
+<body>
+  <div class="card-frame">
+    <p>SVG Back 1</p>
+
+    <svg class="own-card">
+      <!-- SVG content drawn onto the SVG canvas -->
+      <defs>
+        <pattern id="shape" patternUnits="userSpaceOnUse" x="0" y="-10" width="10" height="10">
+          <polygon points="5,0.50 2,9.9 9.5,3.9 0.50,3.9 8,9.9" style="fill:#ff3c00;" />
+        </pattern>
+      </defs>
+      <rect class="back" x="0" y="0" />
+      <rect class="inner" x="15" y="15" fill=url(#shape) />
+      <circle cx="50%" cy="60%" r="55" fill="#fff"/>
+      <circle cx="50%" cy="47%" r="44" fill="#ffffff"/>
+      <circle cx="50%" cy="35%" r="37" fill="#ffffff"/>
+      <circle cx="45%" cy="31%" r="5" fill="#000"/>
+      <circle cx="55%" cy="31%" r="5" fill="#000"/>
+      <polygon points="100,95 100,105 130,100" style="fill:#c65301;" />
+    </svg>
+  </div>
+
+  <div class="card-frame">
+    <p>SVG Back 2</p>
+    <svg class="card svg-card">
+      <defs>
+        <pattern id="circles" patternUnits="userSpaceOnUse" x="0" y="-10" width="10" height="10">
+          <circle cx="5" cy="5" r="5" style="fill: none; stroke: darkred; stroke-width: 1px;" />
+        </pattern>
+        <!--Courtesy of icomoon.io-->
+        <symbol id="icon-html-five" viewBox="0 0 32 32">
+          <title>html-five</title>
+          <path
+            d="M1.892 0l2.567 28.801 11.524 3.199 11.554-3.204 2.572-28.796h-28.216zM24.52 9.42h-13.517l0.322 3.617h12.874l-0.97 10.844-7.245 2.008-7.237-2.008-0.495-5.547h3.547l0.252 2.82 3.933 1.060 0.009-0.002 3.935-1.062 0.408-4.58h-12.242l-0.953-10.681h17.694l-0.316 3.532z">
+          </path>
+        </symbol>
+      </defs>
+      <rect class="back" x="0" y="0" />
+      <rect class="inner" x="15" y="15" fill=url(#circles) />
+      <circle cx="50%" cy="50%" r="60" style="fill: white; stroke: black; stroke-width: 1px;" />
+      <!--Courtesy of icomoon.io-->
+      <use class="icon icon-html-five" xlink:href="#icon-html-five" width="80" x="60" y="5"></use>
+    </svg>
+  </div>
+</body>
+
+</html>

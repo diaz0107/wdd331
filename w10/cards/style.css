@@ -1,0 +1,54 @@
+body {
+  background: #1d1e22;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.card-frame {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#shape {
+  background: red;
+}
+
+.svg-card {
+  width: 200px;
+  height: 280px;
+}
+
+.svg-card > .back {
+  width: 200px;
+  height: 280px;
+  fill: #fff;
+  rx: 20px;
+  ry: 20px;
+}
+
+.own-card {
+  width: 200px;
+  height: 280px;
+  fill: transparent;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* Card 2 */
+.inner {
+  width: 170px;
+  height: 250px;
+  stroke: black;
+}
+
+/*Courtesy of icomoon.io*/
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: black;
+  stroke-width: 0.4px;
+  fill: darkred;
+}
+
+/*# sourceMappingURL=style.css.map */
