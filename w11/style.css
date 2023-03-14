@@ -1,12 +1,20 @@
+
 .raindrop {
   position: absolute;
   content: "";
-  top: 200px;
-  left: 700px;
-  width: 200px;
-  height: 200px;
+  top: 150px;
+  left: 800px;
+  width: 100px;
+  height: 100px;
   background: #65DEF1;
   transform: rotate(-45deg);
   transform-origin: top center;
-  border-radius: 165% 0 165% 125%
+  border-radius: 120% 0 120% 80%
+}
+body{
+  background: linear-gradient(#ffffff 50%, rgb(101,222,241) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgb(101,222,241) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgb(101,222,241) 0) 55px 0 #65DEF1;
+background-size: 110px 900px;
+background-repeat: repeat-x;
 }
