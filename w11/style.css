@@ -11,6 +11,32 @@
   transform-origin: top center;
   border-radius: 120% 0 120% 80%
 }
+.raindrop1 {
+  position: absolute;
+  content: "";
+  top: 100px;
+  left: 600px;
+  width: 100px;
+  height: 100px;
+  background: #65DEF1;
+  transform: rotate(-45deg);
+  transform-origin: top center;
+  border-radius: 120% 0 120% 80%
+}
+
+.raindrop2 {
+  position: absolute;
+  content: "";
+  top: 200px;
+  left: 1000px;
+  width: 100px;
+  height: 100px;
+  background: #65DEF1;
+  transform: rotate(-45deg);
+  transform-origin: top center;
+  border-radius: 120% 0 120% 80%
+}
+
 body{
   background: linear-gradient(#ffffff 50%, rgb(101,222,241) 0) 0 0,
 radial-gradient(circle closest-side, #FFFFFF 53%, rgb(101,222,241) 0) 0 0,
